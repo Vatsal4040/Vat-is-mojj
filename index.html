@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mini Games</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  padding: 32px 24px 12px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+header p {
+  margin: 8px 0 0;
+  opacity: 0.6;
+}
+
+/* GRID */
+.grid {
+  padding: 32px 24px 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* GAME CARD */
+.game {
+  background: #111;
+  border-radius: 16px;
+  padding: 22px;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease, opacity .2s ease;
+}
+
+.game:hover {
+  transform: translateY(-4px);
+  background: #181818;
+}
+
+.game.disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.game-number {
+  font-size: 0.85rem;
+  opacity: 0.5;
+}
+
+.game-title {
+  margin: 6px 0 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.game-desc {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 24px;
+  background: linear-gradient(transparent, #000 60%);
+  font-size: 0.85rem;
+  opacity: 0.4;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Games</h1>
+  <p>Small experiments. Big ideas.</p>
+</header>
+
+<main class="grid">
+
+  <!-- Game 1 -->
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/mojj001-Guess-the-Lie/'">
+    <div class="game-number">Game 1</div>
+    <div class="game-title">🤥 Guess the Lie</div>
+    <div class="game-desc">One statement is false. Can you spot it?</div>
+  </div>
+
+  <!-- Game 2 -->
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/mojj002-Would-You/'">
+    <div class="game-number">Game 2</div>
+    <div class="game-title">🔘 Would You Press the Button?</div>
+    <div class="game-desc">A tempting reward. A terrible cost.</div>
+  </div>
+
+  <!-- Game 3 -->
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/mojj003-Tower-of-Hanoi/'">
+    <div class="game-number">Game 3</div>
+    <div class="game-title">🗼 Tower of Hanoi</div>
+    <div class="game-desc">A classic puzzle. Fewer moves than you think.</div>
+  </div>
+
+  <!-- Game 4 -->
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/mojj004-Fast-Tap/'">
+    <div class="game-number">Game 4</div>
+    <div class="game-title">⚡ Fast Tap</div>
+    <div class="game-desc">How fast can you really react?</div>
+  </div>
+
+  <!-- Game 5 -->
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/mojj005-SuSu/'">
+    <div class="game-number">Game 5</div>
+    <div class="game-title">🚽 Pee Pee Time</div>
+    <div class="game-desc">Don’t ask. Just play.</div>
+  </div>
+
+  <!-- Game 6 -->
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/mojj006-Count-to-10/'">
+    <div class="game-number">Game 6</div>
+    <div class="game-title">⏳ Do Not Hurry — Count to 10</div>
+    <div class="game-desc">Patience is harder than it sounds.</div>
+  </div>
+
+  <!-- Game 7 -->
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/mojj007-limit-ma/'">
+    <div class="game-number">Game 7</div>
+    <div class="game-title">🚦 Under Limit</div>
+    <div class="game-desc">Stay under the limit. That’s it.</div>
+  </div>
+
+  <!-- Game 8 -->
+  <div class="game" onclick="location.href='https://vatsal4040.github.io/mojj008-bpl/'">
+    <div class="game-number">Game 8</div>
+    <div class="game-title">💸 BPL</div>
+    <div class="game-desc">Spend it. All of it.</div>
+  </div>
+
+  <!-- Game 9 -->
+  <div class="game disabled">
+    <div class="game-number">Game 9</div>
+    <div class="game-title">⭕ Draw a Perfect Circle</div>
+    <div class="game-desc">Coming soon.</div>
+  </div>
+
+  <!-- Game 10 -->
+  <div class="game disabled">
+    <div class="game-number">Game 10</div>
+    <div class="game-title">Coming Soon</div>
+    <div class="game-desc">Something new.</div>
+  </div>
+
+</main>
+
+<footer>
+  More games coming soon.
+</footer>
+
+</body>
+</html>
